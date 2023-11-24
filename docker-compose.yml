@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  db:
+    image: "mysql:8"
+    ports:
+      - "3000:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 1q2w3e
+      MYSQL_DATABASE: mysql
+  hello-spring:
+    image: "dreampath88/hello-spring"
+    # build: "./hello-spring"
+    ports:
+      - "8080:8080"
