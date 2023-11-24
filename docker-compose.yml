@@ -9,6 +9,5 @@ services:
       MYSQL_DATABASE: mysql
   hello-spring:
     image: "dreampath88/hello-spring"
-    # build: "./hello-spring"
     ports:
       - "8080:8080"
